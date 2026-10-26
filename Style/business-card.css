@@ -1,0 +1,53 @@
+
+.hero-brand-row{display:flex;align-items:center;justify-content:center;gap:64px;max-width:800px;margin:22px auto 24px}
+.hero-identity{flex:0 0 210px}
+.hero-identity .hero-logo{width:170px;height:170px;margin:0 auto 8px}
+.hero-identity .hero-name{white-space:nowrap;font-size:26px;margin:0}
+.business-card-viewer{width:430px;min-width:0;max-width:100%;text-align:start}
+.business-card-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 4px;font-size:12px;color:var(--lime);font-weight:700}
+.business-card-heading span:last-child{direction:ltr;color:var(--muted);font:11px Arial,sans-serif;letter-spacing:1px}
+.business-card-stage{position:relative;isolation:isolate;display:grid;place-items:center;width:100%;aspect-ratio:2.05;perspective:1100px;border-radius:12px;outline-offset:6px}
+.business-card-stage::after{content:"";position:absolute;z-index:-1;bottom:-3px;left:6%;width:88%;height:25px;background:radial-gradient(ellipse,rgba(0,0,0,.6),transparent 70%);filter:blur(7px);pointer-events:none}
+.business-card{position:relative;width:100%;aspect-ratio:877/360;transform-style:preserve-3d;transform:rotateX(var(--card-x,8deg)) rotateY(var(--card-y,-18deg));transition:transform .38s ease;direction:ltr}
+.business-card-face{position:absolute;inset:0;margin:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border:1px solid rgba(231,242,194,.38);border-radius:6px;overflow:hidden;background:#142e39;box-shadow:0 16px 28px rgba(0,0,0,.28)}
+.business-card-face img{width:100%;height:100%;object-fit:fill;user-select:none;-webkit-user-drag:none}
+.business-card-front{transform:translateZ(1.5px)}
+.business-card-back{transform:rotateY(180deg) translateZ(1.5px);background:#dcf0b7}
+.business-card-edge{position:absolute;pointer-events:none;background:#c6d5a5;backface-visibility:hidden}
+.business-card-edge-top,.business-card-edge-bottom{width:100%;height:3px;left:0;transform:rotateX(90deg);background:linear-gradient(#e4efc4,#8a9a79)}
+.business-card-edge-top{top:-1.5px}
+.business-card-edge-bottom{bottom:-1.5px}
+.business-card-edge-left,.business-card-edge-right{width:3px;height:100%;top:0;transform:rotateY(90deg);background:linear-gradient(90deg,#8a9a79,#e4efc4)}
+.business-card-edge-left{left:-1.5px}
+.business-card-edge-right{right:-1.5px}
+.card-interactive .business-card-stage{cursor:grab;touch-action:pan-y;user-select:none}
+.card-interactive .business-card-stage.is-dragging{cursor:grabbing}
+.business-card-stage.is-dragging .business-card{transition:none}
+.business-card-controls{display:none;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px;margin:9px 0 0}
+.card-interactive .business-card-controls{display:flex}
+.business-card-controls button{display:inline-flex;align-items:center;justify-content:center;gap:5px;min-height:34px;padding:5px 12px;border:1px solid var(--line);border-radius:8px;background:rgba(7,20,29,.6);color:var(--muted);font-size:10px;line-height:1.5}
+.business-card-controls button:hover,.business-card-controls button[aria-pressed="true"]{color:var(--lime);border-color:rgba(231,242,194,.45);background:rgba(231,242,194,.07)}
+.business-card-angle{display:none;align-items:center;gap:10px;margin:10px auto 0;max-width:320px;font:11px Arial,sans-serif;color:var(--muted);direction:ltr}
+.card-interactive .business-card-angle{display:flex}
+.business-card-angle input{min-width:0;flex:1;accent-color:var(--lime);cursor:pointer;height:18px}
+.business-card-angle output{min-width:32px;text-align:end;font-variant-numeric:tabular-nums}
+.business-card-hint{display:none;font-size:10px;line-height:1.8;text-align:center;color:var(--muted);margin:7px 0 0}
+.card-interactive .business-card-hint{display:block}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+@media(max-width:760px){
+  .hero-brand-row{gap:28px;max-width:660px}
+  .hero-identity{flex-basis:170px}
+  .hero-identity .hero-logo{width:145px;height:145px}
+  .hero-identity .hero-name{font-size:22px}
+  .business-card-viewer{width:390px}
+}
+@media(max-width:600px){
+  .hero-brand-row{flex-direction:column;gap:22px;margin-top:18px;margin-bottom:24px}
+  .hero-identity{flex-basis:auto}
+  .hero-identity .hero-logo{width:130px;height:130px;margin-top:0}
+  .hero-identity .hero-name{font-size:22px}
+  .business-card-viewer{width:min(410px,100% - 12px)}
+  .business-card-heading{font-size:11px}
+  .business-card-controls button{min-height:38px;padding-inline:13px;font-size:11px}
+}
+@media(prefers-reduced-motion:reduce){.business-card{transition:none}}

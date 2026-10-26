@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0A1C28">
+<meta name="description" content="رياض العطاوي، مبرمج ومصمم جرافيك. مشاريع ويب وتصاميم ودعم تقني وتجارب بالذكاء الاصطناعي.">
+<title>رياض العطاوي | برمجة وتصميم ودعم تقني</title>
+<link rel="icon" type="image/png" href="Assets/Images/logo.png">
+<link rel="stylesheet" href="Assets/vendor/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="Style/Ryo.css">
+<link rel="alternate" hreflang="en" href="en/index.html">
+<link rel="stylesheet" href="Style/business-card.css">
+</head>
+<body>
+
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="الرئيسية">
+      <img class="brand-logo" src="Assets/Images/logo.png" alt="" width="54" height="54">
+      <span><strong>رياض العطاوي</strong><small>RIYADH ALATAWI</small></span>
+    </a>
+
+    <nav class="links" id="nav-links" aria-label="القائمة الرئيسية">
+      <a href="#home">الرئيسية</a>
+      <a href="#services">خدماتي</a>
+      <a href="#github-projects">مشاريعي</a>
+      <a href="#ai-gallery">AI</a>
+      <a href="#technologies">أدواتي</a>
+      <a href="#resume">السيرة</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-linkedin" href="https://www.linkedin.com/in/RiyadhAlotaibi/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn @RiyadhAlotaibi" title="LinkedIn @RiyadhAlotaibi">
+        <i aria-hidden="true" class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a class="header-github" href="https://github.com/RiyadhAlotaibi/" target="_blank" rel="noopener noreferrer" aria-label="GitHub @RiyadhAlotaibi" title="GitHub @RiyadhAlotaibi">
+        <i aria-hidden="true" class="fa-brands fa-github"></i>
+      </a>
+      <a class="btn" href="https://wa.me/966556840949" target="_blank" rel="noopener noreferrer" aria-label="واتساب">
+        <i aria-hidden="true" class="fa-brands fa-whatsapp"></i><span>واتساب</span>
+      </a>
+    </div>
+
+    <nav class="lang-picker" aria-label="اللغة">
+      <a class="active" href="index.html" lang="ar" hreflang="ar" aria-current="page">عربي</a>
+      <a href="en/index.html" lang="en" hreflang="en">EN</a>
+    </nav>
+
+    <button class="menu-toggle" id="menu-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="فتح القائمة">
+      <span class="menu-fallback" aria-hidden="true">☰</span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+
+<section class="hero" id="home">
+  <div class="container hero-content reveal visible">
+    <span class="hero-flag">برمجة • تصميم • دعم تقني • AI</span>
+    <div class="hero-brand-row">
+      <div class="hero-identity">
+        <img class="hero-logo floaty" src="Assets/Images/logo.png" alt="شعار رياض العطاوي" width="170" height="170" fetchpriority="high">
+        <div class="hero-name">رياض العطاوي</div>
+      </div>
+      <div class="business-card-viewer" data-business-card>
+        <div class="business-card-heading"><span>بطاقة الأعمال</span><span aria-hidden="true">360°</span></div>
+        <div class="business-card-stage" tabindex="0" role="group" aria-label="تدوير بطاقة الأعمال" aria-describedby="card-hint">
+          <div class="business-card">
+            <div class="business-card-face business-card-front" data-card-face="front">
+              <img src="Assets/Images/business-card-front.svg" alt="الوجه الأمامي لبطاقة رياض العطاوي: للمشاكل التقنية ومشاكل الحسابات." width="1754" height="720" draggable="false">
+            </div>
+            <div class="business-card-face business-card-back" data-card-face="back" aria-hidden="true">
+              <img src="Assets/Images/business-card-back.svg" alt="الوجه الخلفي: خدمات تقنية، واستعادة الحسابات، ونقل البيانات، ودعم فني عن بُعد. واتساب فقط: 0556840949." width="1754" height="720" draggable="false">
+            </div>
+            <span class="business-card-edge business-card-edge-top" aria-hidden="true"></span>
+            <span class="business-card-edge business-card-edge-bottom" aria-hidden="true"></span>
+            <span class="business-card-edge business-card-edge-left" aria-hidden="true"></span>
+            <span class="business-card-edge business-card-edge-right" aria-hidden="true"></span>
+          </div>
+        </div>
+        <div class="business-card-controls" role="group" aria-label="بطاقة الأعمال">
+          <button type="button" data-card-view="front" aria-pressed="true">الوجه الأمامي</button>
+          <button type="button" data-card-view="back" aria-pressed="false">الوجه الخلفي</button>
+          <button type="button" data-card-view="reset" aria-label="إعادة ضبط العرض"><span aria-hidden="true">↺</span> إعادة ضبط العرض</button>
+        </div>
+        <div class="business-card-angle">
+          <label class="visually-hidden" for="card-angle">زاوية الدوران</label>
+          <input id="card-angle" data-card-angle type="range" min="0" max="360" step="1" value="342" aria-describedby="card-hint">
+          <output data-card-degrees for="card-angle">342°</output>
+        </div>
+        <p class="business-card-hint" id="card-hint">اسحب البطاقة لتدويرها، أو استخدم مفاتيح الأسهم.</p>
+      </div>
+    </div>
+    <h1><span>برمجة وتصميم</span> <span class="accent">ودعم تقني</span></h1>
+    <p class="hero-intro">
+      أنا رياض، مبرمج ومصمم جرافيك. أطور مواقع، وأساعد في
+      <strong>حل مشاكل الجوال والكمبيوتر</strong>، وأستخدم أدوات الذكاء الاصطناعي في بعض أعمالي.
+      هنا تجد مشاريعي وتصاميمي والخدمات التي أقدمها.
+    </p>
+    <div class="hero-actions">
+      <a class="btn" href="#services"><span>خدماتي</span><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></a>
+      <a class="btn" href="#github-projects"><span>GitHub</span><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+      <a class="btn" href="https://www.linkedin.com/in/RiyadhAlotaibi" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="stats-strip" id="site-stats" aria-label="إحصاءات الموقع">
+  <div class="container stats-grid">
+    <a class="stat-card" href="#services"><i aria-hidden="true" class="fa-solid fa-layer-group"></i><strong id="stat-services">—</strong><span>خدمات</span></a>
+    <a class="stat-card" href="#github-projects"><i aria-hidden="true" class="fa-brands fa-github"></i><strong id="stat-projects">—</strong><span> GitHub</span></a>
+    <a class="stat-card" href="#ai-gallery"><i aria-hidden="true" class="fa-solid fa-wand-magic-sparkles"></i><strong id="stat-ai">—</strong><span>AI</span></a>
+    <a class="stat-card" href="#technologies"><i aria-hidden="true" class="fa-solid fa-code"></i><strong id="stat-tech">—</strong><span>التقنيات والأدوات</span></a>
+  </div>
+</section>
+
+
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">خدماتي</span>
+      <h2>كيف أقدر أساعدك؟</h2>
+      <p>خدماتي مع نماذج من تصاميمي في مكان واحد. اختر الخدمة وراسلني بتفاصيل طلبك، أو كبّر الصورة لمشاهدة التصميم.</p>
+    </div>
+    <div class="services-grid">
+      <article class="service-card reveal">
+        <button class="service-media" type="button" aria-label="تكبير تصميم استعادة الحسابات">
+          <img class="service-image" src="Assets/Images/service-01.webp" alt="نموذج تصميم لخدمة استعادة الحسابات" loading="lazy" decoding="async" width="853" height="1280">
+          <span class="view-badge"><i class="fa-solid fa-expand" aria-hidden="true"></i> تكبير التصميم</span>
+        </button>
+        <div class="service-body">
+          <span class="tag">تواصل اجتماعي</span>
+          <h3>استعادة الحسابات</h3>
+          <p>المساعدة في خطوات الاستعادة الرسمية والتحقق من الملكية، ثم تأمين الحساب.</p>
+          <a class="service-contact" href="https://wa.me/966556840949?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%A7%D8%B3%D8%AA%D8%B9%D8%A7%D8%AF%D8%A9%20%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%A8%D8%A7%D8%AA." target="_blank" rel="noopener noreferrer" aria-label="استفسار عن استعادة الحسابات">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>استفسر عبر واتساب</span>
+          </a>
+        </div>
+      </article>
+      <article class="service-card reveal">
+        <button class="service-media" type="button" aria-label="تكبير تصميم برمجة المواقع">
+          <img class="service-image" src="Assets/Images/service-02.webp" alt="نموذج تصميم لخدمة برمجة المواقع" loading="lazy" decoding="async" width="853" height="1280">
+          <span class="view-badge"><i class="fa-solid fa-expand" aria-hidden="true"></i> تكبير التصميم</span>
+        </button>
+        <div class="service-body">
+          <span class="tag">تطوير الويب</span>
+          <h3>برمجة المواقع</h3>
+          <p>تطوير مواقع وواجهات تعمل على الجوال والكمبيوتر، وتحسين المواقع الحالية.</p>
+          <a class="service-contact" href="https://wa.me/966556840949?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%A8%D8%B1%D9%85%D8%AC%D8%A9%20%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%82%D8%B9." target="_blank" rel="noopener noreferrer" aria-label="استفسار عن برمجة المواقع">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>استفسر عبر واتساب</span>
+          </a>
+        </div>
+      </article>
+      <article class="service-card reveal">
+        <button class="service-media" type="button" aria-label="تكبير تصميم استرجاع الملفات">
+          <img class="service-image" src="Assets/Images/service-03.webp" alt="نموذج تصميم لخدمة استرجاع الملفات" loading="lazy" decoding="async" width="720" height="1280">
+          <span class="view-badge"><i class="fa-solid fa-expand" aria-hidden="true"></i> تكبير التصميم</span>
+        </button>
+        <div class="service-body">
+          <span class="tag">صور وملفات</span>
+          <h3>استرجاع الملفات</h3>
+          <p>محاولة استرجاع الصور والملفات من الأجهزة ووسائط التخزين والنسخ الاحتياطية.</p>
+          <a class="service-contact" href="https://wa.me/966556840949?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%A7%D8%B3%D8%AA%D8%B1%D8%AC%D8%A7%D8%B9%20%D8%A7%D9%84%D9%85%D9%84%D9%81%D8%A7%D8%AA." target="_blank" rel="noopener noreferrer" aria-label="استفسار عن استرجاع الملفات">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>استفسر عبر واتساب</span>
+          </a>
+        </div>
+      </article>
+      <article class="service-card reveal">
+        <button class="service-media" type="button" aria-label="تكبير تصميم الهوية والتصميم الإعلاني">
+          <img class="service-image" src="Assets/Images/service-04.webp" alt="نموذج تصميم لخدمة الهوية والتصميم الإعلاني" loading="lazy" decoding="async" width="720" height="1280">
+          <span class="view-badge"><i class="fa-solid fa-expand" aria-hidden="true"></i> تكبير التصميم</span>
+        </button>
+        <div class="service-body">
+          <span class="tag">تصاميم</span>
+          <h3>الهوية والتصميم الإعلاني</h3>
+          <p>تصميم شعارات وهويات بصرية وبوسترات وبنرات تحمل طابع مشروعك.</p>
+          <a class="service-contact" href="https://wa.me/966556840949?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%87%D9%88%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86%D9%8A." target="_blank" rel="noopener noreferrer" aria-label="استفسار عن الهوية والتصميم الإعلاني">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>استفسر عبر واتساب</span>
+          </a>
+        </div>
+      </article>
+      <article class="service-card reveal">
+        <button class="service-media" type="button" aria-label="تكبير تصميم الدعم التقني">
+          <img class="service-image" src="Assets/Images/service-05.webp" alt="نموذج تصميم لخدمة الدعم التقني" loading="lazy" decoding="async" width="720" height="1280">
+          <span class="view-badge"><i class="fa-solid fa-expand" aria-hidden="true"></i> تكبير التصميم</span>
+        </button>
+        <div class="service-body">
+          <span class="tag">جوال وكمبيوتر</span>
+          <h3>الدعم التقني</h3>
+          <p>حل مشاكل الجوال والكمبيوتر، تثبيت البرامج، وضبط الإعدادات. يتوفر دعم عن بُعد حسب المشكلة.</p>
+          <a class="service-contact" href="https://wa.me/966556840949?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D8%AF%D8%B9%D9%85%20%D8%A7%D9%84%D8%AA%D9%82%D9%86%D9%8A." target="_blank" rel="noopener noreferrer" aria-label="استفسار عن الدعم التقني">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>استفسر عبر واتساب</span>
+          </a>
+        </div>
+      </article>
+      <article class="service-card reveal">
+        <button class="service-media" type="button" aria-label="تكبير تصميم موشن">
+          <img class="service-image" src="Assets/Images/service-06.webp" alt="نموذج تصميم لخدمة تصميم موشن" loading="lazy" decoding="async" width="720" height="1280">
+          <span class="view-badge"><i class="fa-solid fa-expand" aria-hidden="true"></i> تكبير التصميم</span>
+        </button>
+        <div class="service-body">
+          <span class="tag">موشن جرافيك</span>
+          <h3>تصميم موشن</h3>
+          <p>تصميم إعلانات وموشن جرافيك ومحتوى بصري لحسابات التواصل ومشروعك.</p>
+          <a class="service-contact" href="https://wa.me/966556840949?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%85%D9%88%D8%B4%D9%86." target="_blank" rel="noopener noreferrer" aria-label="استفسار عن تصميم موشن">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>استفسر عبر واتساب</span>
+          </a>
+        </div>
+      </article>
+      <article class="service-card reveal">
+        <button class="service-media" type="button" aria-label="تكبير تصاميم السوشيال والبطاقات">
+          <img class="service-image" src="Assets/Images/service-07.webp" alt="نموذج تصميم لخدمة تصاميم السوشيال والبطاقات" loading="lazy" decoding="async" width="720" height="1280">
+          <span class="view-badge"><i class="fa-solid fa-expand" aria-hidden="true"></i> تكبير التصميم</span>
+        </button>
+        <div class="service-body">
+          <span class="tag">تواصل اجتماعي</span>
+          <h3>تصاميم السوشيال والبطاقات</h3>
+          <p>تصميم منشورات التواصل وعروض تقديمية وبطاقات خدمات ومواد تعريفية لمشروعك.</p>
+          <a class="service-contact" href="https://wa.me/966556840949?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%AA%D8%B5%D8%A7%D9%85%D9%8A%D9%85%20%D8%A7%D9%84%D8%B3%D9%88%D8%B4%D9%8A%D8%A7%D9%84%20%D9%88%D8%A7%D9%84%D8%A8%D8%B7%D8%A7%D9%82%D8%A7%D8%AA." target="_blank" rel="noopener noreferrer" aria-label="استفسار عن تصاميم السوشيال والبطاقات">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>استفسر عبر واتساب</span>
+          </a>
+        </div>
+      </article>
+      <article class="service-card reveal">
+        <button class="service-media" type="button" aria-label="تكبير تصميم دعم أجهزة Apple">
+          <img class="service-image" src="Assets/Images/service-08.webp" alt="نموذج تصميم لخدمة دعم أجهزة Apple" loading="lazy" decoding="async" width="720" height="1280">
+          <span class="view-badge"><i class="fa-solid fa-expand" aria-hidden="true"></i> تكبير التصميم</span>
+        </button>
+        <div class="service-body">
+          <span class="tag">iPhone وMac</span>
+          <h3>دعم أجهزة Apple</h3>
+          <p>إعداد أجهزة iPhone وMac، تحديث الأنظمة، وحل مشاكل البرامج والأداء.</p>
+          <a class="service-contact" href="https://wa.me/966556840949?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%AF%D8%B9%D9%85%20%D8%A3%D8%AC%D9%87%D8%B2%D8%A9%20Apple." target="_blank" rel="noopener noreferrer" aria-label="استفسار عن دعم أجهزة Apple">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>استفسر عبر واتساب</span>
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="github-projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">مشاريعي</span>
+      <h2>GitHub</h2>
+      <p> GitHub - مشاريعي </p>
+    </div>
+    <div class="github-profile">
+      <i aria-hidden="true" class="fa-brands fa-github"></i>
+      <span dir="ltr">@RiyadhAlotaibi</span>
+      <a class="btn ghost" href="https://github.com/RiyadhAlotaibi" target="_blank" rel="noopener noreferrer">
+        <span>GitHub</span><i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </div>
+    <div class="github-grid" id="github-list"></div>
+  </div>
+</section>
+
+
+<section class="section ai-section" id="ai-gallery">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">AI</span>
+      <h2>مقاطع بالذكاء الاصطناعي</h2>
+      <p>تجارب في صناعة الفيديو والمحتوى البصري بأدوات الذكاء الاصطناعي.</p>
+    </div>
+    <div class="ai-gallery-shell reveal" aria-label="مقاطع بالذكاء الاصطناعي">
+      <button class="gallery-arrow ai-prev" id="ai-prev" type="button" aria-label="المقطع السابق"><i aria-hidden="true" class="fa-solid fa-chevron-right"></i></button>
+      <div class="ai-media-stage" id="ai-media-stage">
+        <div class="ai-player-host" id="ai-player-host"></div>
+        <div class="ai-media-loading" id="ai-media-loading" aria-live="polite">
+          <i aria-hidden="true" class="fa-solid fa-circle-notch fa-spin"></i>
+          <span data-video-status>جارٍ تحميل المقطع…</span>
+        </div>
+      </div>
+      <div class="ai-media-tools">
+        <span class="ai-slide-index" id="ai-slide-index">—</span>
+        <a class="ai-video-link" id="ai-video-link" href="Vid/1.mp4" target="_blank" rel="noopener noreferrer" aria-label="فتح المقطع في نافذة جديدة">
+          <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square"></i><span>فتح المقطع</span>
+        </a>
+      </div>
+      <button class="gallery-arrow ai-next" id="ai-next" type="button" aria-label="المقطع التالي"><i aria-hidden="true" class="fa-solid fa-chevron-left"></i></button>
+      <div class="gallery-controls ai-gallery-controls">
+        <div class="gallery-dots" id="ai-dots" aria-label="اختيار مقطع"></div>
+      </div>
+      <p class="gallery-tip">اضغط تشغيل للمشاهدة، وتنقّل بين المقاطع بالأسهم.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="technologies">
+  <div class="container">
+    <div class="tech-achieve-grid reveal">
+
+      <div class="tech-achieve-col">
+        <div class="section-head section-head-sm">
+          <span class="eyebrow">أدواتي</span>
+          <h2>التقنيات والأدوات</h2>
+          <p>الأدوات اليومية التي أستخدمها.</p>
+        </div>
+        <div class="tech-grid">
+          <div class="tech-card"><div class="tech-logo" style="color: #3776AB;"><i aria-hidden="true" class="fa-brands fa-python"></i></div><span class="tech-title">Python</span></div>
+          <div class="tech-card"><div class="tech-logo" style="color: #F7DF1E;"><i aria-hidden="true" class="fa-brands fa-js"></i></div><span class="tech-title">JavaScript</span></div>
+          <div class="tech-card"><div class="tech-logo" style="color: #007396;"><i aria-hidden="true" class="fa-brands fa-java"></i></div><span class="tech-title">Java</span></div>
+          <div class="tech-card"><div class="tech-logo" style="color: #777BB4;"><i aria-hidden="true" class="fa-brands fa-php"></i></div><span class="tech-title">PHP</span></div>
+          <div class="tech-card"><div class="tech-logo" style="color: #FCC624;"><i aria-hidden="true" class="fa-brands fa-linux"></i></div><span class="tech-title">Linux</span></div>
+          <div class="tech-card"><div class="tech-logo" style="color: #FFFFFF;"><i aria-hidden="true" class="fa-brands fa-github"></i></div><span class="tech-title">GitHub</span></div>
+          <div class="tech-card"><div class="tech-logo" style="color: #3DDC84;"><i aria-hidden="true" class="fa-brands fa-android"></i></div><span class="tech-title">Android</span></div>
+          <div class="tech-card"><div class="tech-logo" style="color: #3B5998;"><i aria-hidden="true" class="fa-solid fa-moon"></i></div><span class="tech-title">Lua</span></div>
+          <div class="tech-card"><div class="tech-logo" style="color: #FFD21E;"><i aria-hidden="true" class="fa-solid fa-face-smile"></i></div><span class="tech-title">Hugging Face</span></div>
+          <div class="tech-card"><div class="tech-logo" style="color: #74AA9C;"><i aria-hidden="true" class="fa-solid fa-brain"></i></div><span class="tech-title">OpenAI</span></div>
+          <div class="tech-card"><div class="tech-logo" style="color: #4479A1;"><i aria-hidden="true" class="fa-solid fa-database"></i></div><span class="tech-title">MySQL</span></div>
+          <div class="tech-card"><div class="tech-logo" style="color: #F80000;"><i aria-hidden="true" class="fa-solid fa-server"></i></div><span class="tech-title">Oracle APEX</span></div>
+          <div class="tech-card"><div class="tech-logo" style="color: #FFFFFF;"><i aria-hidden="true" class="fa-solid fa-bolt"></i></div><span class="tech-title">GROK</span></div>
+          <div class="tech-card"><div class="tech-logo" style="color: #8E75B2;"><i aria-hidden="true" class="fa-solid fa-gem"></i></div><span class="tech-title">Gemini</span></div>
+        </div>
+      </div>
+
+      <div class="tech-achieve-col">
+        <div class="section-head section-head-sm">
+          <span class="eyebrow">إنجازاتي</span>
+          <h2>الشارات والشهادات</h2>
+          <p>شهادات مهنية معتمدة.</p>
+        </div>
+        <div class="badges-grid">
+          <div class="badge-card">
+            <div class="badge-icon"><img src="Assets/Images/B1.png" alt="Supply Chain Professional"></div>
+            <h3>Supply Chain Professional</h3>
+          </div>
+          <div class="badge-card">
+            <div class="badge-icon"><img src="Assets/Images/B2.png" alt="Networking Basics"></div>
+            <h3>Networking Basics</h3>
+          </div>
+          <div class="badge-card">
+            <div class="badge-icon"><img src="Assets/Images/B3.png" alt="Introduction to Cybersecurity"></div>
+            <h3>Intro to Cybersecurity</h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section alt-section resume-section" id="resume">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">عني</span>
+      <h2>السيرة الذاتية</h2>
+      <p>السيرة متوفرة بالعربي والإنجليزي.</p>
+    </div>
+    <div class="resume-layout reveal">
+      <div class="cv-preview" id="cv-preview">
+        <img id="cvImage" src="Assets/Images/cv-ar-preview.png" alt="معاينة السيرة الذاتية" loading="lazy">
+        <div class="cv-preview-tag">معاينة السيرة</div>
+      </div>
+      <div class="cv-details">
+        <div class="cv-pill"><i aria-hidden="true" class="fa-regular fa-file-pdf"></i><span>السيرة • PDF</span></div>
+        <h3>رياض نايف العتيبي</h3>
+        <p>خريج دبلوم هندسة البرمجيات. أعمل في تطوير المواقع والتصميم والدعم التقني، وأجرب أدوات الذكاء الاصطناعي في البرمجة وصناعة المحتوى.</p>
+        <div class="resume-details">
+          <div><i aria-hidden="true" class="fa-solid fa-graduation-cap"></i><span>دبلوم هندسة البرمجيات</span></div>
+          <div><i aria-hidden="true" class="fa-solid fa-code"></i><span>برمجة وتطوير مواقع</span></div>
+          <div><i aria-hidden="true" class="fa-solid fa-pen-ruler"></i><span>تصميم جرافيك</span></div>
+          <div><i aria-hidden="true" class="fa-solid fa-mobile-screen-button"></i><span>حل مشاكل الجوال والكمبيوتر</span></div>
+          <div><i aria-hidden="true" class="fa-solid fa-headset"></i><span>دعم تقني</span></div>
+          <div><i aria-hidden="true" class="fa-solid fa-wand-magic-sparkles"></i><span>استخدام أدوات AI</span></div>
+        </div>
+        <div class="resume-actions">
+          <a class="btn" id="cvOpen" href="Assets/CV/Arabic.pdf" target="_blank" rel="noopener">
+            <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square"></i><span>فتح PDF</span>
+          </a>
+          <a class="btn ghost" id="cvDownload" href="Assets/CV/Arabic.pdf" download="Riyadh_CV_Arabic.pdf">
+            <i aria-hidden="true" class="fa-solid fa-download"></i><span>تحميل PDF</span>
+          </a>
+        </div>
+        <div class="cv-current"><i aria-hidden="true" class="fa-solid fa-language"></i><span>النسخة العربية</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="container cta reveal" id="contact">
+  <span class="eyebrow">تواصل معي</span>
+  <h2>عندك مشروع أو تحتاج مساعدة؟</h2>
+  <p>راسلني بتفاصيل طلبك على واتساب، أو اكتب لي من النموذج.</p>
+  <a class="btn" href="https://wa.me/966556840949" target="_blank" rel="noopener noreferrer">
+    <i aria-hidden="true" class="fa-brands fa-whatsapp"></i><span>واتساب: 0556840949</span>
+  </a>
+  <div class="email-contact">
+    <button class="btn ghost" id="toggle-email" type="button" aria-controls="email-panel" aria-expanded="false">
+      <i aria-hidden="true" class="fa-regular fa-envelope"></i><span>إرسال بريد</span>
+    </button>
+    <div class="email-panel" id="email-panel" hidden>
+      <form action="https://formsubmit.co/RiadAlruqi@gmail.com" id="email-form" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="رسالة من موقع رياض العطاوي">
+        <div class="email-fields">
+          <label><span>الاسم</span><input type="text" name="name" placeholder="اسمك" minlength="2" maxlength="100" autocomplete="name" aria-describedby="name-hint" required><small id="name-hint">حرفان على الأقل</small></label>
+          <label><span>البريد</span><input type="email" name="email" placeholder="name@example.com" maxlength="254" autocomplete="email" inputmode="email" aria-describedby="email-hint" dir="ltr" required><small id="email-hint">مثل name@example.com</small></label>
+          <label><span>الجوال (اختياري)</span><input type="tel" name="phone" placeholder="+9665XXXXXXXX" minlength="7" maxlength="16" pattern="\+?[0-9]{7,15}" autocomplete="tel" inputmode="tel" aria-describedby="phone-hint" dir="ltr"><small id="phone-hint">مثال: +966556840949</small></label>
+          <label><span>الموضوع</span><input type="text" name="subject" placeholder="عن ماذا تريد التواصل؟" maxlength="150" autocomplete="off" required></label>
+          <label class="wide"><span>الرسالة</span><textarea name="message" placeholder="اكتب تفاصيل طلبك" rows="5" maxlength="5000" required></textarea></label>
+        </div>
+        <button class="btn" type="submit"><i aria-hidden="true" class="fa-regular fa-paper-plane"></i><span>إرسال</span></button>
+        <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+        <p>يرجى ذكر تفاصيل كافية لفهم طلبك.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<footer class="footer">
+  <div class="container">
+    <span>© 2026 رياض العطاوي — جميع الحقوق محفوظة</span>
+    <a class="footer-contact" href="https://wa.me/966556840949" target="_blank" rel="noopener noreferrer"><i aria-hidden="true" class="fa-brands fa-whatsapp"></i> 0556840949</a>
+    <a href="#home" aria-label="العودة إلى الأعلى">↑</a>
+    <a class="footer-linkedin" href="https://www.linkedin.com/in/RiyadhAlotaibi/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn @RiyadhAlotaibi"><i aria-hidden="true" class="fa-brands fa-linkedin"></i></a>
+    <a class="footer-github" href="https://github.com/RiyadhAlotaibi/" target="_blank" rel="noopener noreferrer" aria-label="GitHub @RiyadhAlotaibi"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+
+  </div>
+</footer>
+
+
+<dialog class="modal" id="galleryModal" aria-labelledby="modalCaption">
+  <div class="modal-panel">
+    <button class="modal-close" id="modalClose" type="button" aria-label="إغلاق"><i aria-hidden="true" class="fa-solid fa-xmark"></i></button>
+    <div class="modal-img-wrap"><img id="modalImage" alt="معاينة التصميم"></div>
+    <div class="modal-caption" id="modalCaption"></div>
+  </div>
+</dialog>
+
+
+<template id="ui-copy">
+  <span data-copy="navOpen">فتح القائمة</span>
+  <span data-copy="navClose">إغلاق القائمة</span>
+  <span data-copy="githubRepo">عرض المشروع</span>
+  <span data-copy="githubEmpty">لا توجد مشاريع عامة متاحة حاليًا.</span>
+  <span data-copy="aiWork">عرض المقطع {n}</span>
+  <span data-copy="aiPlayerTitle">المقطع {n}</span>
+  <span data-copy="aiLoading">جارٍ تحميل المقطع…</span>
+  <span data-copy="aiError">تعذر تشغيل المقطع. جرّب فتحه في نافذة جديدة.</span>
+  <span data-copy="emailSubject">رسالة من موقع رياض العطاوي</span>
+  <span data-copy="emailSending">جارٍ الإرسال…</span>
+  <span data-copy="emailSuccess">تم استلام طلب الإرسال. شكرًا لتواصلك.</span>
+  <span data-copy="emailError">ما تم الإرسال. جرّب مرة ثانية أو راسلني على واتساب.</span>
+  <span data-copy="emailLocal">الإرسال غير متاح في هذه المعاينة المحلية. يمكنك التواصل معي عبر واتساب.</span>
+  <span data-copy="invalidName">اكتب اسمًا من حرفين على الأقل.</span>
+  <span data-copy="invalidPhone">أدخل رقم هاتف صحيحًا، مثل +966556840949.</span>
+  <span data-copy="invalidEmail">تحقق من عنوان البريد، مثل name@example.com.</span>
+</template>
+
+<script defer src="JS/Ryo.js"></script>
+<script defer src="JS/business-card.js"></script>
+</body>
+</html>

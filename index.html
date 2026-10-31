@@ -272,27 +272,55 @@
       <h2>مقاطع بالذكاء الاصطناعي</h2>
       <p>تجارب في صناعة الفيديو والمحتوى البصري بأدوات الذكاء الاصطناعي.</p>
     </div>
-    <div class="ai-gallery-shell reveal" aria-label="مقاطع بالذكاء الاصطناعي">
-      <button class="gallery-arrow ai-prev" id="ai-prev" type="button" aria-label="المقطع السابق"><i aria-hidden="true" class="fa-solid fa-chevron-right"></i></button>
-      <div class="ai-media-stage" id="ai-media-stage">
-        <div class="ai-player-host" id="ai-player-host"></div>
-        <div class="ai-media-loading" id="ai-media-loading" aria-live="polite">
-          <i aria-hidden="true" class="fa-solid fa-circle-notch fa-spin"></i>
-          <span data-video-status>جارٍ تحميل المقطع…</span>
+    <div class="ai-galleries">
+      <div class="ai-gallery-col reveal">
+        <h3 class="ai-gallery-title"><i aria-hidden="true" class="fa-solid fa-bullhorn"></i>إعلانات تجارية</h3>
+        <div class="ai-gallery-shell" data-ai-gallery="commercial" aria-label="إعلانات تجارية">
+          <button class="gallery-arrow ai-prev" type="button" aria-label="المقطع السابق"><i aria-hidden="true" class="fa-solid fa-chevron-right"></i></button>
+          <div class="ai-media-stage">
+            <div class="ai-player-host"></div>
+            <div class="ai-media-loading" aria-live="polite">
+              <i aria-hidden="true" class="fa-solid fa-circle-notch fa-spin"></i>
+              <span data-video-status>جارٍ تحميل المقطع…</span>
+            </div>
+          </div>
+          <div class="ai-media-tools">
+            <span class="ai-slide-index">—</span>
+            <a class="ai-video-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="فتح المقطع في نافذة جديدة">
+              <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square"></i><span>فتح المقطع</span>
+            </a>
+          </div>
+          <button class="gallery-arrow ai-next" type="button" aria-label="المقطع التالي"><i aria-hidden="true" class="fa-solid fa-chevron-left"></i></button>
+          <div class="gallery-controls ai-gallery-controls">
+            <div class="gallery-dots" aria-label="اختيار مقطع"></div>
+          </div>
         </div>
       </div>
-      <div class="ai-media-tools">
-        <span class="ai-slide-index" id="ai-slide-index">—</span>
-        <a class="ai-video-link" id="ai-video-link" href="https://f.top4top.io/m_3951gf6gd1.mp4" target="_blank" rel="noopener noreferrer" aria-label="فتح المقطع في نافذة جديدة">
-          <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square"></i><span>فتح المقطع</span>
-        </a>
+      <div class="ai-gallery-col reveal">
+        <h3 class="ai-gallery-title"><i aria-hidden="true" class="fa-solid fa-user"></i>مقاطع شخصية</h3>
+        <div class="ai-gallery-shell" data-ai-gallery="personal" aria-label="مقاطع شخصية">
+          <button class="gallery-arrow ai-prev" type="button" aria-label="المقطع السابق"><i aria-hidden="true" class="fa-solid fa-chevron-right"></i></button>
+          <div class="ai-media-stage">
+            <div class="ai-player-host"></div>
+            <div class="ai-media-loading" aria-live="polite">
+              <i aria-hidden="true" class="fa-solid fa-circle-notch fa-spin"></i>
+              <span data-video-status>جارٍ تحميل المقطع…</span>
+            </div>
+          </div>
+          <div class="ai-media-tools">
+            <span class="ai-slide-index">—</span>
+            <a class="ai-video-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="فتح المقطع في نافذة جديدة">
+              <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square"></i><span>فتح المقطع</span>
+            </a>
+          </div>
+          <button class="gallery-arrow ai-next" type="button" aria-label="المقطع التالي"><i aria-hidden="true" class="fa-solid fa-chevron-left"></i></button>
+          <div class="gallery-controls ai-gallery-controls">
+            <div class="gallery-dots" aria-label="اختيار مقطع"></div>
+          </div>
+        </div>
       </div>
-      <button class="gallery-arrow ai-next" id="ai-next" type="button" aria-label="المقطع التالي"><i aria-hidden="true" class="fa-solid fa-chevron-left"></i></button>
-      <div class="gallery-controls ai-gallery-controls">
-        <div class="gallery-dots" id="ai-dots" aria-label="اختيار مقطع"></div>
-      </div>
-      <p class="gallery-tip">اضغط تشغيل للمشاهدة، وتنقّل بين المقاطع بالأسهم.</p>
     </div>
+    <p class="gallery-tip reveal">اضغط تشغيل للمشاهدة، وتنقّل بين المقاطع بالأسهم.</p>
   </div>
 </section>
 
@@ -454,6 +482,7 @@
   <span data-copy="aiPlayerTitle">المقطع {n}</span>
   <span data-copy="aiLoading">جارٍ تحميل المقطع…</span>
   <span data-copy="aiError">تعذر تشغيل المقطع. جرّب فتحه في نافذة جديدة.</span>
+  <span data-copy="aiEmpty">المقاطع قادمة قريبًا.</span>
   <span data-copy="emailSubject">رسالة من موقع رياض العطاوي</span>
   <span data-copy="emailSending">جارٍ الإرسال…</span>
   <span data-copy="emailSuccess">تم استلام طلب الإرسال. شكرًا لتواصلك.</span>

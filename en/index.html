@@ -328,42 +328,55 @@
        Experiments in making video and visual content with AI tools.
       </p>
 </div>
-<div aria-label="Videos made with AI" class="ai-gallery-shell reveal">
-<button aria-label="Previous video" class="gallery-arrow ai-prev" id="ai-prev" type="button">
-<i aria-hidden="true" class="fa-solid fa-chevron-right">
-</i>
-</button>
-<div class="ai-media-stage" id="ai-media-stage">
-<div class="ai-player-host" id="ai-player-host">
-</div>
-<div aria-live="polite" class="ai-media-loading" id="ai-media-loading">
-<i aria-hidden="true" class="fa-solid fa-circle-notch fa-spin">
-</i>
-<span data-video-status="">
-         Loading video…
-        </span>
+<div class="ai-galleries">
+<div class="ai-gallery-col reveal">
+<h3 class="ai-gallery-title"><i aria-hidden="true" class="fa-solid fa-bullhorn"></i>Commercial ads</h3>
+<div aria-label="Commercial ads" class="ai-gallery-shell" data-ai-gallery="commercial">
+<button aria-label="Previous video" class="gallery-arrow ai-prev" type="button"><i aria-hidden="true" class="fa-solid fa-chevron-right"></i></button>
+<div class="ai-media-stage">
+<div class="ai-player-host"></div>
+<div aria-live="polite" class="ai-media-loading">
+<i aria-hidden="true" class="fa-solid fa-circle-notch fa-spin"></i>
+<span data-video-status="">Loading video…</span>
 </div>
 </div>
 <div class="ai-media-tools">
-<span class="ai-slide-index" id="ai-slide-index">—</span>
-<a aria-label="Open video in a new window" class="ai-video-link" href="https://f.top4top.io/m_3951gf6gd1.mp4" id="ai-video-link" rel="noopener noreferrer" target="_blank">
-<i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square">
-</i>
-<span>
-         Open video
-        </span>
+<span class="ai-slide-index">—</span>
+<a aria-label="Open video in a new window" class="ai-video-link" href="#" rel="noopener noreferrer" target="_blank">
+<i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square"></i><span>Open video</span>
 </a>
 </div>
-<button aria-label="Next video" class="gallery-arrow ai-next" id="ai-next" type="button">
-<i aria-hidden="true" class="fa-solid fa-chevron-left">
-</i>
-</button>
+<button aria-label="Next video" class="gallery-arrow ai-next" type="button"><i aria-hidden="true" class="fa-solid fa-chevron-left"></i></button>
 <div class="gallery-controls ai-gallery-controls">
-<div aria-label="Choose a video" class="gallery-dots" id="ai-dots">
+<div aria-label="Choose a video" class="gallery-dots"></div>
 </div>
 </div>
-<p class="gallery-tip">Press play to watch, and use the arrows to switch between videos.</p>
 </div>
+<div class="ai-gallery-col reveal">
+<h3 class="ai-gallery-title"><i aria-hidden="true" class="fa-solid fa-user"></i>Personal videos</h3>
+<div aria-label="Personal videos" class="ai-gallery-shell" data-ai-gallery="personal">
+<button aria-label="Previous video" class="gallery-arrow ai-prev" type="button"><i aria-hidden="true" class="fa-solid fa-chevron-right"></i></button>
+<div class="ai-media-stage">
+<div class="ai-player-host"></div>
+<div aria-live="polite" class="ai-media-loading">
+<i aria-hidden="true" class="fa-solid fa-circle-notch fa-spin"></i>
+<span data-video-status="">Loading video…</span>
+</div>
+</div>
+<div class="ai-media-tools">
+<span class="ai-slide-index">—</span>
+<a aria-label="Open video in a new window" class="ai-video-link" href="#" rel="noopener noreferrer" target="_blank">
+<i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square"></i><span>Open video</span>
+</a>
+</div>
+<button aria-label="Next video" class="gallery-arrow ai-next" type="button"><i aria-hidden="true" class="fa-solid fa-chevron-left"></i></button>
+<div class="gallery-controls ai-gallery-controls">
+<div aria-label="Choose a video" class="gallery-dots"></div>
+</div>
+</div>
+</div>
+</div>
+<p class="gallery-tip reveal">Press play to watch, and use the arrows to switch between videos.</p>
 </div>
 </section>
 <section class="section" id="technologies">
@@ -644,6 +657,7 @@
    </span>
 <span data-copy="aiLoading">Loading video…</span>
 <span data-copy="aiError">The video could not be played. Try opening it in a new window.</span>
+<span data-copy="aiEmpty">Videos coming soon.</span>
 <span data-copy="emailSubject">
     Message from Riyadh’s website
    </span>
